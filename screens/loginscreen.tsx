@@ -1,14 +1,14 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-const loginscreen = () => {
+const Loginscreen = () => {
   return (
     <View>
-      <Text>Ye wala homescreen hai bhaiya!</Text>
+      <Text style={{color:'#000', fontSize:24}}>E humara Loginscreen hai!</Text>
     </View>
   )
 }
 
-export default loginscreen
+export default Loginscreen
 
 const styles = StyleSheet.create({})

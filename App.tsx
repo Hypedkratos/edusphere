@@ -1,18 +1,17 @@
-import { StyleSheet, Text, View, ScrollView } from 'react-native'
+import { StyleSheet, Text, View} from 'react-native'
 import React from 'react'
 import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
-import loginscreen from './screens/loginscreen'
+import Loginscreen from './screens/Loginscreen'
 
 const Stack = createStackNavigator();
 
 export default function App (){
   return (
     <NavigationContainer>
-      <ScrollView>
-      <Stack.Screen options={{headerShown:false}} name="login" component={loginscreen}></Stack.Screen>
-    </ScrollView>
-    <Text>hi</Text>
+      <Stack.Navigator>
+      <Stack.Screen options={{headerShown:false}} name='Loginscreen' component={Loginscreen}></Stack.Screen>
+      </Stack.Navigator>
     </NavigationContainer>
   )
 }
